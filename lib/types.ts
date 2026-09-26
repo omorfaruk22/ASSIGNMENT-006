@@ -1,4 +1,5 @@
-export interface Workout {
+
+ export interface Workout {
   id: number;
   name: string;
   image: string;
@@ -14,6 +15,7 @@ export interface Workout {
   instructions: string[];
   done?: boolean;
 }
+
 
 export interface PlanWorkout extends Workout { done: boolean }
 
