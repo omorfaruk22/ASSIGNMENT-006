@@ -12,10 +12,15 @@ export interface Workout {
   rating: number;
   description: string;
   instructions: string[];
+  done?: boolean;
 }
 
 export interface PlanWorkout extends Workout { done: boolean }
+
 export interface StorageData { plan: PlanWorkout[]; saved: Workout[] }
+
 export interface Totals { exercises: number; minutes: number; calories: number }
+
 export type SortType = 'duration' | 'calories' | 'rating';
+
 export type PlanTab = 'plan' | 'saved';
